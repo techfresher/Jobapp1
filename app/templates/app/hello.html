@@ -1,0 +1,13 @@
+
+{% if is_authenticated %}
+    <h1>Hello {{name}}, welcome back!</h1>
+{% else %}
+    <h1>Hello user, you are wlcome</h1>    
+{% endif%}
+<h2>Age: {{age}}</h2>
+<h2>{{first_list.0}}</h2>
+<h2>{{temp_object.x}}</h2>
+<h2>{{real_age.2}}</h2>
+{% for p in first_list %}
+    <p>first: {{ p }} </p>
+{% endfor %}  
